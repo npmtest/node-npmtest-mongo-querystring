@@ -1,1 +1,40 @@
-{     "devDependencies": {         "mongo-querystring": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-mongo-querystring",     "homepage": "https://github.com/npmtest/node-npmtest-mongo-querystring",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-mongo-querystring.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [mongo-querystring (v4.1.0)](https://github.com/Turistforeningen/node-mongo-querystring#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-mongo-querystring.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mongo-querystring) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mongo-querystring.svg)](https://travis-ci.org/npmtest/node-npmtest-mongo-querystring)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "mongo-querystring": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-mongo-querystring",
+    "keywords": [
+        "coverage",
+        "test",
+        "mongo-querystring"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_mongo_querystring.js",
+    "name": "npmtest-mongo-querystring",
+    "nameAlias": "npmtest_mongo_querystring",
+    "nameOriginal": "npmtest-mongo-querystring",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-mongo-querystring.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
