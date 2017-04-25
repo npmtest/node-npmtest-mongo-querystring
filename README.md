@@ -1,6 +1,6 @@
 # npmtest-mongo-querystring
 
-#### test coverage for  [mongo-querystring (v4.1.0)](https://github.com/Turistforeningen/node-mongo-querystring#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-mongo-querystring.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mongo-querystring) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mongo-querystring.svg)](https://travis-ci.org/npmtest/node-npmtest-mongo-querystring)
+#### basic test coverage for  [mongo-querystring (v4.1.0)](https://github.com/Turistforeningen/node-mongo-querystring#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-mongo-querystring.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-mongo-querystring) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-mongo-querystring.svg)](https://travis-ci.org/npmtest/node-npmtest-mongo-querystring)
 
 #### Parse and pass URL queries to MongoDB query
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-mongo-querystring/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-mongo-querystring/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-mongo-querystring/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-mongo-querystring/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-mongo-querystring/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-mongo-querystring/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-mongo-querystring/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-mongo-querystring/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-mongo-querystring/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-mongo-querystring/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-mongo-querystring/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-mongo-querystring/build/coverage.html/index.html)
 
@@ -107,7 +107,8 @@
         "test": "mocha -c -b --check-leaks -R tap test.js examples/test.js",
         "test:watch": "mocha -w -c -b --check-leaks -R progress test.js examples/test.js"
     },
-    "version": "4.1.0"
+    "version": "4.1.0",
+    "bin": {}
 }
 ```
 
